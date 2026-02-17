@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Ink</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="loader">
+  <div class="loader-box">
+    <img src="img/logo.png" class="logo-load">
+
+    <div class="load-bar">
+      <div class="load-fill" id="loadFill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav glass">
+  <img src="img/logo.png" class="logo">
+  <div>
+<div class="nav-buttons">
+
+  <button class="btn neon-btn fx" onclick="scrollBooking()">
+    BOOKING
+    <span class="smoke-btn"></span>
+  </button>
+
+  <button class="btn glass-btn fx" onclick="ig()">
+    IG
+    <span class="smoke-btn"></span>
+  </button>
+
+  <button class="btn glass-btn fx" onclick="tiktok()">
+    TikTok
+    <span class="smoke-btn"></span>
+  </button>
+
+</div>
+
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="video/bg.mp4">
+  </video>
+
+  <div class="hero-content reveal">
+    <h1 class="neon">MAGIC INK</h1>
+    <p>Temporary Tattoo Studio</p>
+    <button class="btn neon-btn big fx" onclick="scrollBooking()">
+  BOOK NOW
+  <span class="smoke-btn"></span>
+</button>
+
+
+  </div>
+</section>
+
+<!-- SMOKE EFFECT -->
+<div class="smoke"></div>
+<div class="cursor-glow"></div>
+
+<!-- BEFORE AFTER SLIDER -->
+<section class="section">
+  <h2 class="reveal">Before After Tattoo</h2>
+
+  <div class="ba-container reveal">
+    <img src="img/before.jpg" class="before">
+    <img src="img/after.jpg" class="after" id="afterImg">
+    <input type="range" min="0" max="100" value="50" id="slider">
+  </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+<section class="section">
+  <h2 class="reveal">Portfolio</h2>
+  <div class="grid">
+    <div class="card reveal">
+  <img src="img/p1.jpg">
+</div>
+
+<div class="card reveal">
+  <img src="img/p2.jpg">
+</div>
+
+<div class="card reveal">
+  <img src="img/p3.jpg">
+</div>
+
+<div class="card reveal">
+  <img src="img/p4.jpg">
+</div>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+  <h2 class="reveal">Booking</h2>
+
+  <div class="booking glass reveal">
+    <input id="nama" placeholder="Nama">
+    <input id="desain" placeholder="Desain tattoo">
+    <select id="jenis">
+      <option>Basic</option>
+      <option>Premium</option>
+    </select>
+    <button onclick="kirim()">Kirim Booking</button>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section reveal">
+  <h2>Lokasi</h2>
+
+  <iframe src="https://maps.google.com/maps?q=Magic%20Ink%201%20CBD%20Ciledug&output=embed"></iframe>
+  <iframe src="https://maps.google.com/maps?q=Magic%20Ink%202%20Ciputat&output=embed"></iframe>
+</section>
+
+<footer class="footer">
+  <p>
+    powered by 
+    <span class="credit" onclick="openIg()">@benyoriki</span>
+  </p>
+</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
