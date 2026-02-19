@@ -118,3 +118,41 @@ setTimeout(()=>{ripple.remove()},600);
 function openIg(){
 window.open("https://instagram.com/benyoriki");
 }
+
+// FILTER GALLERY
+function filterGallery(type) {
+  let items = document.querySelectorAll('.gallery-item');
+  let buttons = document.querySelectorAll('.filter-buttons button');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  items.forEach(item => {
+    if (type === 'all') {
+      item.style.display = "block";
+    } else {
+      if (item.classList.contains(type)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    }
+  });
+}
+
+// LIGHTBOX
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+document.querySelectorAll(".gallery-item img").forEach(img => {
+  img.onclick = () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  }
+});
+
+lightbox.onclick = () => {
+  lightbox.style.display = "none";
+};
+
+
