@@ -154,27 +154,59 @@
 
 
 <!-- PORTFOLIO -->
-<section class="section">
+<section class="section" id="portfolio">
   <h2 class="reveal">Portfolio</h2>
-  <div class="grid">
-    <div class="card reveal">
-  <img src="img/p1.jpg">
-</div>
 
-<div class="card reveal">
-  <img src="img/p2.jpg">
-</div>
-
-<div class="card reveal">
-  <img src="img/p3.jpg">
-</div>
-
-<div class="card reveal">
-  <img src="img/p4.jpg">
-</div>
-
+  <!-- Filter Buttons -->
+  <div class="filter-buttons reveal">
+    <button onclick="filterGallery('all')" class="active">All</button>
+    <button onclick="filterGallery('tattoo')">Tattoo</button>
+    <button onclick="filterGallery('piercing')">Piercing</button>
   </div>
+
+  <!-- Tattoo -->
+  <h3 class="gallery-title">Tattoo Works</h3>
+  <div class="gallery-grid">
+
+    <div class="gallery-item tattoo"><img src="img/p1.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p2.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p3.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p4.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p5.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p6.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p7.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p8.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p9.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p10.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p11.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p12.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p13.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p14.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p15.jpg"></div>
+    <div class="gallery-item tattoo"><img src="img/p16.jpg"></div>
+  </div>
+
+  <!-- Piercing -->
+  <h3 class="gallery-title">Piercing Works</h3>
+  <div class="gallery-grid">
+
+    <div class="gallery-item piercing"><img src="img/p17.jpg"></div>
+    <div class="gallery-item piercing"><img src="img/p18.jpg"></div>
+    <div class="gallery-item piercing"><img src="img/p19.jpg"></div>
+    <div class="gallery-item piercing"><img src="img/p20.jpg"></div>
+    <div class="gallery-item piercing"><img src="img/p21.jpg"></div>
+    <div class="gallery-item piercing"><img src="img/p22.jpg"></div>
+    <div class="gallery-item piercing"><img src="img/p23.jpg"></div>
+  </div>
+
 </section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightbox-img">
+</div>
+
+
 
 <!-- ================= PRICE LIST SECTION ================= -->
 <section class="price-section" id="price">
